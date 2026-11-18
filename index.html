@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>PortalKelas Digital</title>
+  <meta name="description" content="Belajar skill baru kapan saja — PortalKelas Digital">
+
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#6C3CE9">
+  <link rel="apple-touch-icon" href="./icon-192.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- Terapkan tema tersimpan sebelum render agar tidak berkedip -->
+  <script>
+    try { var t = localStorage.getItem('pk_theme'); if (t === '"dark"' || t === '"light"') document.documentElement.setAttribute('data-theme', JSON.parse(t)); } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="sr" href="#main">Lewati ke konten utama</a>
+  <header id="topbar"></header>
+
+  <main id="main" tabindex="-1">
+    <div id="boot-sk" class="col g16" aria-hidden="true">
+      <div class="sk" style="height:140px;border-radius:20px"></div>
+      <div class="course-grid"><div class="sk" style="height:220px"></div><div class="sk" style="height:220px"></div><div class="sk" style="height:220px"></div></div>
+    </div>
+    <div id="views"></div>
+  </main>
+
+  <nav id="bnav" aria-label="Navigasi bawah"></nav>
+  <div id="toasts" role="status" aria-live="polite"></div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
